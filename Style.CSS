@@ -8,6 +8,11 @@ body {
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(5,255,235,1) 100%);
     background-image: linear-gradient(color, color);
 }
+.img {
+    max-width: 50vw;
+    text-align: center;
+    margin: 0 auto;
+}
 .text-color {
     color: white;
     max-width: 50vw;
