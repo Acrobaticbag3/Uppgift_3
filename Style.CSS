@@ -13,6 +13,14 @@ body {
 h1 {
     margin-top: 0;
 }
+li {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
 a:link {
     color: rgb(2,0,36);
     text-decoration: none;
@@ -20,6 +28,11 @@ a:link {
 a:visited  {
     color: purple;
     text-decoration: none;
+}
+.list-text-color {
+    color:black;
+    font-weight: bold;
+    font-style: italic;
 }
 .next-page {
     max-width: 15vw;
