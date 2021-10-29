@@ -2,6 +2,7 @@ html {
     scroll-behavior: smooth; /* As of now, tis is not needed*/
     height: 100%; 
 }
+
 body { 
     text-align: center;
     margin: 0;
@@ -9,56 +10,68 @@ body {
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(5,255,235,1) 100%);
     background-image: linear-gradient(color, color);
 }
+
 h1 {
     margin-top: 0;
 }
+
 p {
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
 }
+
 li {
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
 }
+
 table, th, td{
     border: 1px solid black;
     border-collapse: collapse;
     margin: 0 auto;
 }
+
 th,td{
     width: 200px;
     height: 50px;
 }
 
-td{text-align: center;}
-th{background-color: gray;}
+td, th{
+    text-align: center;
+    background-color: gray;
+    height: 50px;
+    width: 200px;
+}
 
 tr:nth-child(odd){  }
 tr:nth-child(even){  }
 
-th:nth-child(1){ text-align: left; }
+th:nth-child(1){ text-align: center; }
 th:nth-child(2){ text-align: center; }
 th:nth-child(3){ text-align: center; }
-th:nth-child(4){ text-align: right; }
+th:nth-child(4){ text-align: center; }
 
-td:nth-child(1){ text-align: left; }
+td:nth-child(1){ text-align: center; }
 td:nth-child(2){ text-align: center; }
 td:nth-child(3){ text-align: center; }
-td:nth-child(4){ text-align: right; }
+td:nth-child(4){ text-align: center; }
 
 a:link {
     color: rgb(2,0,36);
     text-decoration: none;
 }
+
 a:visited  {
     color: purple;
     text-decoration: none;
 }
+
 .list-text-color {
     color:black;
     font-weight: bold;
     font-style: italic;
 }
+
 .next-page {
     max-width: 15vw;
     border-width: 5px;
@@ -68,6 +81,7 @@ a:visited  {
     text-align: center;
     margin: 1em auto;
 }
+
 .img {
     max-width: 50vw;
     text-align: center;
@@ -75,6 +89,7 @@ a:visited  {
     width: 700px;
     height: 300px;
 }
+
 .text-color {
     margin-top: 1em;
     padding-top: 3px;
@@ -85,6 +100,7 @@ a:visited  {
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(197,209,164,1) 0%);
 }
+
 .navbar { 
     overflow: hidden;
     background-color: #333;
@@ -92,6 +108,7 @@ a:visited  {
     position: sticky;
     top: 0;
 }
+
 .navbar a {
     float: left;
     font-size: 16px;
@@ -100,10 +117,12 @@ a:visited  {
     padding: 14px 16px;
     text-decoration: none;
 }
+
 .dropdown {
     float: left;
     overflow: hidden;
 }
+
 .dropdown .dropbtn {
     font-size: 16px;  
     border: none;
@@ -114,9 +133,11 @@ a:visited  {
     font-family: inherit;
     margin: 0;
 }
+
 .navbar a:hover, .dropdown:hover .dropbtn {
     background-color: red;
 }
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -125,6 +146,7 @@ a:visited  {
     box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.2);
     z-index: 1;
 }
+
 .dropdown-content a {
     float: none;
     color: black;
@@ -133,12 +155,15 @@ a:visited  {
     display: block;
     text-align: left;
 }
+
 .dropdown-content a:hover {
     background-color: #ddd;
 }
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
 .mylist {
     background-position: center;
     max-width: 30vw;
@@ -150,6 +175,7 @@ a:visited  {
     margin: 1em auto;
     text-align: left;
 }
+
 .container{
     display: grid;
     grid-template-columns: auto;
