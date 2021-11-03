@@ -1,0 +1,212 @@
+/* experimental stuff */
+h1 {
+    position: fixed;
+    bottom: 92.5%;
+    right: 47%;
+    font-family: 'Times New Roman', Times, serif;
+    color: cornsilk;
+}
+
+.buttonOne {
+    position: fixed;
+    bottom: 860px;
+    background-position: left;
+    width: 100px;
+    height: 30px;
+}
+
+.buttonTwo {
+    position: fixed;
+    bottom: 830px;
+    background-position: left;
+    width: 100px;
+    height: 30px;
+}
+
+.buttonThree {
+    position: fixed;
+    bottom: 800px;
+    background-position: left;
+    width: 100px;
+    height: 30px;
+}
+
+.buttonFour {
+    position: fixed;
+    bottom: 770px;
+    background-position: left;
+    width: 100px;
+    height: 30px;
+}
+
+.buttonHideOne {
+    position: fixed;
+    bottom: 730px;
+    right: 92%;
+    visibility: hidden;
+    width: 100px;
+    height: 30px;
+}
+
+.buttonHideTwo {
+    position: fixed;
+    bottom: 730px;
+    right: 85%;
+    visibility: hidden; 
+    width: 100px;
+    height: 30px;
+}
+
+.buttonHideThree {
+    position: fixed;
+    bottom: 730px;
+    right: 78%;
+    visibility: hidden; 
+    width: 100px;
+    height: 30px;   
+}
+
+div.sneakOne {
+    position: absolute;
+    background-color: black;
+    top: 100px;
+    left: 100px;  
+    visibility: hidden;
+}
+
+div.sneakTwo {
+    position: absolute;
+    background-color: black;
+    top: 100px;
+    left: 100px;  
+    visibility: hidden;
+}
+
+div.sneakThree {
+    position: absolute;
+    background-color: black;
+    top: 100px;
+    left: 100px;  
+    visibility: hidden;
+}
+
+div.sneakFour {
+    position: absolute;
+    background-color: black;
+    top: 100px;
+    left: 100px;  
+    visibility: hidden;
+}
+
+div.sneakFive {
+    position: absolute;
+    background-color: black;
+    top: 100px;
+    left: 100px;  
+    visibility: hidden;
+}
+
+div.sneakSix {
+    position: absolute;
+    background-color: black;
+    top: 100px;
+    left: 100px;  
+    visibility: hidden;
+}
+
+div.sneakSeven {
+    position: absolute;
+    background-color: black;
+    top: 100px;
+    left: 100px;  
+    visibility: hidden;
+}
+
+div.sneakEight {
+    position: absolute;
+    background-color: black;
+    top: 100px;
+    left: 100px;  
+    visibility: hidden;
+}
+
+div.A {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: fixed;
+    visibility: hidden;
+}
+
+div.B {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    position: fixed;
+    visibility: hidden;
+}
+
+div.C {
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    position: fixed;
+    visibility: hidden;
+}
+
+div.D {
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    position: fixed;
+    visibility: hidden;
+}
+
+div.E {
+    width: 50px;
+    height: 50px;
+    background-color: orangered;
+    position: fixed;
+    visibility: hidden;
+}
+
+div.F {
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    position: fixed;
+    visibility: hidden;
+}
+
+div.G {
+    width: 50px;
+    height: 50px;
+    background-color: cyan;
+    position: fixed;
+    visibility: hidden;
+}
+
+div.H {
+    width: 50px;
+    height: 50px;
+    background-color: hotpink;
+    position: fixed;
+    visibility: hidden;
+}
+
+.box {
+    background: white;
+    transition:
+    width 1s;
+    background: 0.5s 1s; 
+}
+
+.box:hover {
+    width: 200px;
+    background-color: orangered;
+}
+
+body { background-image: linear-gradient(color, color); }
+html { height: 100%; }
+body { background-image: linear-gradient(#14da9f, rgb(255, 174, 0)) }
+/* experimental stuff */
