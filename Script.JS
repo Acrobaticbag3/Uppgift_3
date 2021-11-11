@@ -1,9 +1,3 @@
-/* experimental stuff = = = NOT IN USE = = =*/
-function clickMe() { // kinda boring event, might add something more fun later.
-    console.log("Hello!");
-    alert("Hello!");
-}
-
 function importantMassage() {
     for (var i = 0; i < 20; i++) { // currently not asigned to anything
         alert("We've been trying to reach you about your cars extended warenty!");
@@ -83,7 +77,6 @@ function moveDive() {
     function getRandomNumber(min, max) {  // function that returns a random number between a min and max
     return Math.random() * (max - min) + min;
     }
-
 }
 
 var pressed = false;
@@ -95,17 +88,30 @@ function musicTime(){ //this changes a button to do two different things
        document.getElementById("music").innerHTML = "Music?";}
     pressed = !pressed;
 }
-// Experimental stuff //
-var musicdby = new Audio('I am bad song writer.mp3')
-function badSong() {
-    musicdby.play();
+
+function reveal(){ //This is to reveal and hide the Code on the final page.
+    if(!pressed){
+        document.getElementById("revealorhide").innerHTML = "Hide code";
+    }
+    else{
+       document.getElementById("revealorhide").innerHTML = "Show code";}
+    pressed = !pressed;
 }
-var musicdby = new Audio('I am bad song writer.mp3')
-function badSong() {
-    musicdby.play();
+
+function revealtwo(){ //This is to reveal and hide the Code on the final page.
+    if(!pressed){
+        document.getElementById("revealorhidetwo").innerHTML = "Hide code";
+    }
+    else{
+       document.getElementById("revealorhidetwo").innerHTML = "Show code";}
+    pressed = !pressed;
 }
-var musicdby = new Audio('I am bad song writer.mp3')
-function badSong() {
-    musicdby.play();
+
+function revealthree(){ //This is to reveal and hide the Code on the final page.
+    if(!pressed){
+        document.getElementById("revealorhidethree").innerHTML = "Hide code";
+    }
+    else{
+       document.getElementById("revealorhidethree").innerHTML = "Show code";}
+    pressed = !pressed;
 }
-/* experimental stuff */

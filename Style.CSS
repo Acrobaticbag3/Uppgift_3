@@ -1,9 +1,9 @@
 html { 
-    scroll-behavior: smooth; /* As of now, tis is not needed*/
+    scroll-behavior: smooth; 
     height: 100%; 
-}
+} 
 
-body { 
+body { /* Customization for the backround of the document */
     text-align: center;
     margin: 0 auto;
     background: rgb(2,0,36);
@@ -31,20 +31,8 @@ table, th, td{
     margin: 0 auto;
 }
 
-th,td{
-    width: 200px;
-    height: 50px;
-}
-
-td, th{
-    text-align: center;
-    background-color: gray;
-    height: 50px;
-    width: 200px;
-}
-
-tr:nth-child(odd){  }
-tr:nth-child(even){  }
+tr:nth-child(odd){ background-color:rgb(235, 195, 144) }
+tr:nth-child(even){ background-color:rgb(143, 119, 88) }
 
 th:nth-child(1){ text-align: center; }
 th:nth-child(2){ text-align: center; }
@@ -72,7 +60,7 @@ a:visited  {
     font-style: italic;
 }
 
-.next-page {
+.next-page { /* customization for the next page button */
     max-width: 15vw;
     border-width: 5px;
     border-style: solid;
@@ -90,8 +78,15 @@ a:visited  {
     width: 700px;
     height: 300px;
 }
+.img-two {
+    max-width: 50vw;
+    text-align: center;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+}
 
-.text-color {
+.text-color { 
     margin-top: 1em;
     padding-top: 3px;
     padding-bottom: 10px;
@@ -135,7 +130,7 @@ a:visited  {
     margin: 0;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
+.navbar a:hover, .dropdown:hover .dropbtn { /* This turns the selected section of the navbar red when your cursor hover above it */
     background-color: red;
 }
 
@@ -165,7 +160,7 @@ a:visited  {
     display: block;
 }
 
-.mylist {
+.mylist { /* The standard customization I use for my list, or rather the stuff in them */
     background-position: center;
     max-width: 30vw;
     border-width: 5px;
@@ -175,6 +170,7 @@ a:visited  {
     background: linear-gradient(90deg, rgb(1, 0, 10) 0%, rgb(132, 139, 110) 0%);
     margin: 1em auto;
     text-align: left;
+    list-style: none;
 }
 
 .container{
@@ -187,6 +183,3 @@ a:visited  {
      "footer footer footer footer"
     ;
 }
-/* ======== Experimental stuff ======== */
-
-/* ======== Experimental stuff ========*/ 
