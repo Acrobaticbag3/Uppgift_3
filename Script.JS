@@ -1,3 +1,5 @@
+var pressed = false;
+
 function importantMassage() {
     for (var i = 0; i < 20; i++) { // currently not asigned to anything
         alert("We've been trying to reach you about your cars extended warenty!");
@@ -51,14 +53,14 @@ function movingDivs() {
 
 Math.floor(Math.random() * 500) + 1;
 function moveDive() {
-    document.querySelector('.sneakOne').style.visibility = 'visible' // change the visibility an element with the apropriate tag
-    document.querySelector('.sneakTwo').style.visibility = 'visible'
-    document.querySelector('.sneakThree').style.visibility = 'visible'
-    document.querySelector('.sneakFour').style.visibility = 'visible'
-    document.querySelector('.sneakFive').style.visibility = 'visible'
-    document.querySelector('.sneakSix').style.visibility = 'visible'
-    document.querySelector('.sneakSeven').style.visibility = 'visible'
-    document.querySelector('.sneakEight').style.visibility = 'visible'
+    document.querySelector('.sneak-one').style.visibility = 'visible' // change the visibility of an element with the apropriate tag
+    document.querySelector('.sneak-two').style.visibility = 'visible'
+    document.querySelector('.sneak-three').style.visibility = 'visible'
+    document.querySelector('.sneak-four').style.visibility = 'visible'
+    document.querySelector('.sneak-five').style.visibility = 'visible'
+    document.querySelector('.sneak-six').style.visibility = 'visible'
+    document.querySelector('.sneak-seven').style.visibility = 'visible'
+    document.querySelector('.sneak-eight').style.visibility = 'visible'
 
     var divs = document.getElementsByTagName('div'); // collects all divs
     var winWidth = window.innerWidth;    // get window width 
@@ -79,7 +81,6 @@ function moveDive() {
     }
 }
 
-var pressed = false;
 function musicTime(){ //this changes a button to do two different things
     if(!pressed){
         document.getElementById("music").innerHTML = "Nevermind";
@@ -110,8 +111,12 @@ function revealtwo(){ //This is to reveal and hide the Code on the final page.
 function revealthree(){ //This is to reveal and hide the Code on the final page.
     if(!pressed){
         document.getElementById("revealorhidethree").innerHTML = "Hide code";
+        document.getElementById("img").src="images/first-project.png";
     }
     else{
        document.getElementById("revealorhidethree").innerHTML = "Show code";}
+       document.getElementById("img").src="images/Taskcodeone.png";
     pressed = !pressed;
 }
+
+/*document.querySelector("img").setAttribute("src", "images/first-project.png");*/

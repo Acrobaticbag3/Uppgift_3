@@ -1,6 +1,6 @@
 html { height: 100%; }
 
-body { 
+body {  /* Customization for the backround of the document */
     text-align: center;
     margin: 0 auto;
     background: rgb(2,0,36);
@@ -17,7 +17,7 @@ p {
     font-style: italic;
 }
 
-div.sneak-one {
+div.sneak-one {  /* Creates a div class that conains customization */
     position: absolute;
     background-color: black;
     top: 100px;
@@ -25,7 +25,7 @@ div.sneak-one {
     visibility: hidden;
 }
 
-div.sneak-two {
+div.sneak-two { 
     position: absolute;
     background-color: black;
     top: 100px;
@@ -81,7 +81,7 @@ div.sneak-eight {
     visibility: hidden;
 }
 
-div.A {
+div.A { /* Creates a div class that conains customization */
     width: 50px;
     height: 50px;
     background-color: red;
@@ -160,22 +160,6 @@ div.H {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-}
-
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
-
-.dropdown .dropbtn {
-    font-size: 16px;  
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
@@ -282,4 +266,47 @@ div.H {
      "main main main main"
      "footer footer footer footer"
     ;
+}
+
+.special-img {
+    max-width: 50vw;
+    text-align: center; 
+    margin: 0 auto;
+    width: 50vw;
+    height: 15vw;  
+}
+
+.tooltip { 
+    position: relative; /* places an element relative to its current position without changing the layout around it, */
+    display: inline-block; /* display: inline-block allows to set a width and height on the element. */
+    border-bottom: 1px dotted black;
+}
+  
+.tooltip .tooltiptext {
+    visibility: hidden; /* hides the tooltip */
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Places the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible; /* shows the tooltip */
+}
+
+.next-page { /* customization for the next page button */
+    max-width: 15vw;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 25px;
+    border-color: rgba(255, 255, 255, 0.2);
+    background-color: chocolate;
+    text-align: center;
+    margin: 1em auto;
 }

@@ -7,7 +7,7 @@ body { /* Customization for the backround of the document */
     text-align: center;
     margin: 0 auto;
     background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(5,255,235,1) 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(5,255,235,1) 100%); /* A gradient, this dose so that the page has different colors that fade into eachother. */
     background-image: linear-gradient(color, color);
 }
 
@@ -31,18 +31,26 @@ table, th, td{
     margin: 0 auto;
 }
 
-tr:nth-child(odd){ background-color:rgb(235, 195, 144) }
-tr:nth-child(even){ background-color:rgb(143, 119, 88) }
+img {
+    max-width: 50vw;
+    text-align: center;
+    margin: 0 auto;
+    width: 700px;
+    height: 300px;  
+}
 
-th:nth-child(1){ text-align: center; }
-th:nth-child(2){ text-align: center; }
-th:nth-child(3){ text-align: center; }
-th:nth-child(4){ text-align: center; }
+tr:nth-child(odd){ background-color:rgb(235, 195, 144) } /* A gradient, this dose so that my table has different colors that fade into eachother. but only on every odd row of the table.*/
+tr:nth-child(even){ background-color:rgb(143, 119, 88) } /* A gradient, this dose so that my table has different colors that fade into eachother. but only on every even row of the table.*/
 
-td:nth-child(1){ text-align: center; }
-td:nth-child(2){ text-align: center; }
-td:nth-child(3){ text-align: center; }
-td:nth-child(4){ text-align: center; }
+th:nth-child(1){ text-align: center; } /* creates a child with specifc customization for the first row of the table*/
+th:nth-child(2){ text-align: center; } /* creates a child with specifc customization for the second row of the table*/
+th:nth-child(3){ text-align: center; } /* creates a child with specifc customization for the third row of the table*/
+th:nth-child(4){ text-align: center; } /* creates a child with specifc customization for the fourth row of the table*/
+
+td:nth-child(1){ text-align: center; } /* creates a child with specifc customization for the first data cell of the table*/
+td:nth-child(2){ text-align: center; } /* creates a child with specifc customization for the second data cell of the table*/
+td:nth-child(3){ text-align: center; } /* creates a child with specifc customization for the third data cell of the table*/
+td:nth-child(4){ text-align: center; } /* creates a child with specifc customization for the fourth data cell of the table*/
 
 a:link {
     color: rgb(2,0,36);
@@ -70,14 +78,6 @@ a:visited  {
     text-align: center;
     margin: 1em auto;
 }
-
-.img {
-    max-width: 50vw;
-    text-align: center;
-    margin: 0 auto;
-    width: 700px;
-    height: 300px;
-}
 .img-two {
     max-width: 50vw;
     text-align: center;
@@ -86,7 +86,7 @@ a:visited  {
     height: 200px;
 }
 
-.text-color { 
+.text-color {  /* Customization for text where I don't want to use the class "mylist" */
     margin-top: 1em;
     padding-top: 3px;
     padding-bottom: 10px;
@@ -112,22 +112,6 @@ a:visited  {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-}
-
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
-
-.dropdown .dropbtn {
-    font-size: 16px;  
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn { /* This turns the selected section of the navbar red when your cursor hover above it */
@@ -173,12 +157,12 @@ a:visited  {
     list-style: none;
 }
 
-.container{
+.container{ /* Creates sections and devides the dockument into those sections */
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 25% 25% 25% 25%;
     grid-template-areas: 
-     "header header header header"
+     "header header header header" /*  */
      "main main main main"
      "footer footer footer footer"
     ;

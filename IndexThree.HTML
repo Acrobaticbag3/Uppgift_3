@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en"> <!--This is how to make notes!-->
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> <!--UTF-8 is used for tekenkåding-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="IndexThree.CSS" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    <header class="navbar">
+    <header class="navbar"> <!--Creates an area at the top of the page, in this instance containing the global navbar-->
         <a href="Index.HTML">About me</a>
         <a href="IndexTwo.HTML">My recreational activities</a>
         <a href="IndexThree.HTML">Some of my other projects</a> 
@@ -18,22 +18,39 @@
         <h1 class="text-color">Some implementations from my other projects!</h1>
         <p class="text-color">Over this year I've done a lot of projects to learn html and CSS. On his page you'll get to see some thoes projects! Here is my first ever html project.</p>
         <button id="revealorhide" class="button-reveal-code box" onclick="reveal()">Reveal code</button>
-        <img class="img" src="images/first-project.png" alt="">
+        <p></p>
+        <img id="img" class="special-img" src="images/first-project.png" alt="">
         <p class="text-color">Pretty isen't it? Well, luckily this task wasn't bssed on design. The entire point with this task was to familiarise yourself with HTML and CSS. Just an introduction to coding.</p>
         <p class="text-color">The next project we did was actually a two part project, this project was more centered twords CSS. Part one (a), our task was to create a table with some info in it. There were special criteria that had to be part of our tables, sutch as: background coloring and text positioning. This is how my table turned out:</p>
         <button id="revealorhidetwo" class="button-reveal-code box" onclick="revealtwo()">Reveal code</button>
         <p></p>
-        <img class="img" src="images/Uppgift2a.png" alt="">
+        <img id="img" src="images/Uppgift2a.png" alt="">
         <p class="text-color">Granted it wasn't hard to design the table since we had to recreate an image. The challenge part of the task was figuring out how the copde should be written. As for the second part of the task (part b), we had to recreate a logo. This is how that turned out:</p>
         <button id="revealorhidethree" class="button-reveal-code box" onclick="revealthree()">Reveal code</button>
         <p></p>
-        <img class="img" src="images/Uppgift2b.png" alt="">
+        <img id="img" src="images/Uppgift2b.png" alt="">
         <p>After that was done we spent a couple of weeks on random projects to improve our skills, at the same time we also started to code with Javascript. Here are some of the random things that I did. Do note that two of the buttons will mess upp your UI.</p>
         <!--Experimental stuff-->
-        <button class="button-reveal-code" onclick="moveDive()">Click me!</button>  <!--change the class-->
-        <button class="button-reveal-code" onclick="randomMath()">Important!</button> <!--change the class-->
-        <button class="button-reveal-code" onclick="movingDivs()">Funny divs</button> <!--change the class-->
-        <button id="music" class="buttonFour box" onclick="musicTime()">Music?</button> <!--change the class-->
+        <div class="tooltip">
+            <button class="button-reveal-code">tooltip</button>  
+            <span class="tooltiptext">This is just to show that the buttons here have a tooltip explaining what they do.</span>
+        </div>
+        <div class="tooltip">
+            <button class="button-reveal-code" onclick="moveDive()">Warning</button> 
+            <span class="tooltiptext">This dose nothing of interest, exept brake the UI of the page. And spawns random divs further up.</span>
+        </div>
+        <div class="tooltip">
+            <button class="button-reveal-code" onclick="randomMath()">Important!</button>
+            <span class="tooltiptext">This will display an alert. Every alert will have a random different number on it.</span>
+        </div>
+        <div class="tooltip">
+            <button class="button-reveal-code" onclick="movingDivs()">Divs</button> 
+            <span class="tooltiptext">This spawns eight colored divs that will move arround on the screen randomly.</span>
+        </div>
+        <div class="tooltip">
+            <button id="music" class="button-reveal-code" onclick="musicTime()">Music?</button> 
+            <span class="tooltiptext">This button changes its text, you've surely seen it implemented through out this page.</span>
+        </div>
         <button class="button-hide-one"></button>
         <button class="button-hide-two"></button>
         <button class="button-hide-three"></button>
@@ -54,11 +71,12 @@
         <div class='G'></div>
         <div class='H'></div>   
         <p class="text-color">The most recent project I did, is this webbsite that youre currently on! By far the largest project yet.</p>
+        <p class="next-page"><a href="Index.HTML">Done with this page? Go on to the first one!</a></p>
     </main>
     <footer class="text-color">
         <p>Kevin Johansson, TE20A</p>
     </footer>
     <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="Script.JS"></script>
+    <script src="Script.JS"></script> <!--This allows me to implement JS functions into this "page"-->
 </body>
 </html>
