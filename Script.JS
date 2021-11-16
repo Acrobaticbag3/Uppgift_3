@@ -90,12 +90,12 @@ function musicTime(){ //this changes a button to do two different things
     pressed = !pressed;
 }
 
-function reveal(){ //This is to reveal and hide the Code on the final page.
+function revealone(){ //This is to reveal and hide the Code on the final page.
     if(!pressed){
-        document.getElementById("revealorhide").innerHTML = "Hide code";
+        document.getElementById("revealorhideone").innerHTML = "Hide code";
     }
     else{
-       document.getElementById("revealorhide").innerHTML = "Show code";}
+       document.getElementById("revealorhideone").innerHTML = "Show code";}
     pressed = !pressed;
 }
 
@@ -118,5 +118,50 @@ function revealthree(){ //This is to reveal and hide the Code on the final page.
        document.getElementById("img").src="images/Taskcodeone.png";
     pressed = !pressed;
 }
-
 /*document.querySelector("img").setAttribute("src", "images/first-project.png");*/
+/*experimental stuff*/ 
+let imgone = document.getElementById("imgone");
+let revealorhide = document.getElementById("revealorhide");
+
+function Change() {
+
+    if (imgone.getAttribute('src') === "images./first-project.png") {
+        imgone.setAttribute('src', "images./Taskcodeone.png");
+    }
+    else {
+        imgone.setAttribute('src', "images./first-project.png");
+    }
+}
+
+revealorhide.addEventListener("click", Change);
+
+let imgtwo = document.getElementById("imgtwo");
+let revealorhidetwo = document.getElementById("revealorhidetwo");
+
+function Changetwo() {
+
+    if (imgtwo.getAttribute('src') === "images./Uppgift2a.png") {
+        imgtwo.setAttribute('src', "images./Taskcodetwo.png");
+    }
+    else {
+        imgtwo.setAttribute('src', "images./Uppgift2a.png");
+    }
+}
+
+revealorhidetwo.addEventListener("click", Changetwo);
+
+let imgthree = document.getElementById("imgthree");
+let revealorhidethree = document.getElementById("revealorhidethree");
+
+function Changethree() {
+
+    if (imgthree.getAttribute('src') === "images./Uppgift2b.png") {
+        imgthree.setAttribute('src', "images./TaskcodetwoB.png");
+    }
+    else {
+        imgthree.setAttribute('src', "images./Uppgift2b.png");
+    }
+}
+
+revealorhidethree.addEventListener("click", Changethree);
+/*experimental stuff*/ 
