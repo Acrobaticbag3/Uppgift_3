@@ -81,25 +81,16 @@ function moveDive() {
     }
 }
 
-function musicTime(){ //this changes a button to do two different things
+function revealone() { //This is to reveal and hide the Code on the final page.
     if(!pressed){
-        document.getElementById("music").innerHTML = "Nevermind";
+        document.getElementById("revealorhide").innerHTML = "Hide code"; // gets an elements id, than changes the html text to hide code
     }
     else{
-       document.getElementById("music").innerHTML = "Music?";}
+       document.getElementById("revealorhide").innerHTML = "Show code";} // gets an elements id, than changes the html text to show code
     pressed = !pressed;
 }
 
-function revealone(){ //This is to reveal and hide the Code on the final page.
-    if(!pressed){
-        document.getElementById("revealorhideone").innerHTML = "Hide code";
-    }
-    else{
-       document.getElementById("revealorhideone").innerHTML = "Show code";}
-    pressed = !pressed;
-}
-
-function revealtwo(){ //This is to reveal and hide the Code on the final page.
+function revealtwo() { //This is to reveal and hide the Code on the final page.
     if(!pressed){
         document.getElementById("revealorhidetwo").innerHTML = "Hide code";
     }
@@ -108,14 +99,12 @@ function revealtwo(){ //This is to reveal and hide the Code on the final page.
     pressed = !pressed;
 }
 
-function revealthree(){ //This is to reveal and hide the Code on the final page.
+function revealthree() { //This is to reveal and hide the Code on the final page.
     if(!pressed){
         document.getElementById("revealorhidethree").innerHTML = "Hide code";
-        document.getElementById("img").src="images/first-project.png";
     }
     else{
        document.getElementById("revealorhidethree").innerHTML = "Show code";}
-       document.getElementById("img").src="images/Taskcodeone.png";
     pressed = !pressed;
 }
 /*document.querySelector("img").setAttribute("src", "images/first-project.png");*/

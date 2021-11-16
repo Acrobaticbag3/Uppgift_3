@@ -276,6 +276,14 @@ div.H {
     height: 15vw;  
 }
 
+.code-img-one {
+
+}
+
+.code-img-two {
+
+}
+
 .tooltip { 
     position: relative; /* places an element relative to its current position without changing the layout around it, */
     display: inline-block; /* display: inline-block allows to set a width and height on the element. */
