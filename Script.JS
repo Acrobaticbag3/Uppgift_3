@@ -1,13 +1,4 @@
-var pressed = false;
-
-function importantMassage() {
-    for (var i = 0; i < 20; i++) { // currently not asigned to anything
-        alert("We've been trying to reach you about your cars extended warenty!");
-        console.log("Let's crahs this guys computer!");
-    } 
-}
-
-function randomMath() {
+function randomMath() { // Sends out an alert with a random number from 0-200
     var randomMat = Math.floor(Math.random() * 201);
     alert(randomMat);
 }
@@ -81,6 +72,7 @@ function moveDive() {
     }
 }
 
+var pressed = false;
 function revealone() { //This is to reveal and hide the Code on the final page.
     if(!pressed){
         document.getElementById("revealorhide").innerHTML = "Hide code"; // gets an elements id, than changes the html text to hide code
@@ -108,35 +100,33 @@ function revealthree() { //This is to reveal and hide the Code on the final page
     pressed = !pressed;
 }
 
-
-
-/*experimental stuff*/ 
 let imgone = document.getElementById("imgone");
 let revealorhide = document.getElementById("revealorhide");
 
 function Change() {
-    if (imgone.getAttribute('src') === "images./first-project.png") {
-        imgone.setAttribute('src', "images./Taskcodeone.png");
+    if (imgone.getAttribute('src') === "images./first-project.png") { // checks to make sure that the image source is correct
+        imgone.setAttribute('src', "images./Taskcodeone.png"); // If not change the image to this
     }
     else {
-        imgone.setAttribute('src', "images./first-project.png");
+        imgone.setAttribute('src', "images./first-project.png"); // Otherwise, keep the current image 
     }
 
-    var x = document.getElementById("imgone");
+    var x = document.getElementById("imgone"); // Makes the second code image visable
     if (x.className === "special-img") {
       x.className = "code-img-one";
     } else {
       x.className = "special-img";
     }
 
-    var x = document.getElementById("imgoneB");
+    var x = document.getElementById("imgoneB"); // Makes the second code image invisable
     if (x.className === "code-img-four") {
       x.className = "code-img-two";
     } else {
       x.className = "code-img-four";
     }
 }
-revealorhide.addEventListener("click", Change);
+
+revealorhide.addEventListener("click", Change); // calls the function when the button revealorhide is pressed
 
 let imgtwo = document.getElementById("imgtwo");
 let revealorhidetwo = document.getElementById("revealorhidetwo");
@@ -195,4 +185,4 @@ function Changethree() {
 }
 
 revealorhidethree.addEventListener("click", Changethree);    
-/*experimental stuff*/ 
+ 

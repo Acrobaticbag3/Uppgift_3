@@ -1,8 +1,3 @@
-html { 
-    scroll-behavior: smooth; 
-    height: 100%; 
-} 
-
 body { /* Customization for the backround of the document */
     text-align: center;
     margin: 0 auto;
@@ -11,32 +6,32 @@ body { /* Customization for the backround of the document */
     background-image: linear-gradient(color, color);
 }
 
-h1 {
+h1 { /* settings for the firs header of the document */
     margin-top: 0;
 }
 
-p {
+p { /* Customization for all p tags of the document. This does so that my text has a uniform customization */
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
 }
 
-li {
+li { /* Customization for all list item tag. This does so that the text has a uniform customization in the table */
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
 }
 
-table, th, td{
+table, th, td{ /* customization for the table, table header and table data cells */
     border: 1px solid black;
     border-collapse: collapse;
     margin: 0 auto;
 }
 
-img {
-    max-width: 50vw;
-    text-align: center;
+img { /* Customization for all images without a specific class */
+    max-width: 50vw; /* sets the max with of an image */
+    text-align: center; /* Tells the image where it's meant to be */
     margin: 0 auto;
-    width: 700px;
-    height: 300px;  
+    width: 700px; /* the images width */
+    height: 300px; /* the images height */
 }
 
 tr:nth-child(odd){ background-color:rgb(235, 195, 144) } /* A gradient, this dose so that my table has different colors that fade into eachother. but only on every odd row of the table.*/
@@ -116,32 +111,6 @@ a:visited  {
 
 .navbar a:hover, .dropdown:hover .dropbtn { /* This turns the selected section of the navbar red when your cursor hover above it */
     background-color: red;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
 }
 
 .mylist { /* The standard customization I use for my list, or rather the stuff in them */

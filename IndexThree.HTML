@@ -4,7 +4,7 @@
     <meta charset="UTF-8"> <!--UTF-8 is used for tekenkåding-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="IndexThree.CSS" rel="stylesheet">
+    <link href="IndexThree.CSS" rel="stylesheet"> <!--Links a CSS file called IndexThree. Reoson being this side needed spectial customization-->
     <title>Document</title>
 </head>
 <body>
@@ -33,25 +33,21 @@
         <img id="imgthreeB" class="code-img-four" src="images./TaskstyletwoB.png" alt="">
         <p>After that was done we spent a couple of weeks on random projects to improve our skills, at the same time we also started to code with Javascript. Here are some of the random things that I did. Do note that two of the buttons will mess upp your UI.</p>
         <!--Experimental stuff-->
-        <div class="tooltip">
+        <div class="tooltip"> <!--I used this dive and class so that I could create a tooltip-->
             <button class="button-reveal-code">tooltip</button>  
             <span class="tooltiptext">This is just to show that the buttons here have a tooltip explaining what they do.</span>
         </div>
         <div class="tooltip">
-            <button class="button-reveal-code" onclick="moveDive()">Warning</button> 
+            <button class="button-reveal-code" onclick="moveDive()">Warning</button> <!--A button that has a special JS function-->
             <span class="tooltiptext">This dose nothing of interest, exept brake the UI of the page. And spawns random divs further up.</span>
         </div>
         <div class="tooltip">
-            <button class="button-reveal-code" onclick="randomMath()">Important!</button>
-            <span class="tooltiptext">This will display an alert. Every alert will have a random different number on it.</span>
+            <button class="button-reveal-code" onclick="randomMath()">Important!</button> <!--A button that has a special JS function-->
+            <span class="tooltiptext">This will display an alert. Every alert will have a random number on it.</span>
         </div>
         <div class="tooltip">
-            <button class="button-reveal-code" onclick="movingDivs()">Divs</button> 
-            <span class="tooltiptext">This spawns eight colored divs that will move arround on the screen randomly.</span>
-        </div>
-        <div class="tooltip">
-            <button id="music" class="button-reveal-code" onclick="musicTime()">Music?</button> 
-            <span class="tooltiptext">This button changes its text, you've surely seen it implemented through out this page.</span>
+            <button class="button-reveal-code" onclick="movingDivs()">Divs</button> <!--A button that has a special JS function-->
+            <span class="tooltiptext">This spawns eight colored divs that will move around on the screen randomly.</span>
         </div>
         <button class="button-hide-one"></button>
         <button class="button-hide-two"></button>
