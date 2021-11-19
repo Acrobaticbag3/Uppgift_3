@@ -107,21 +107,35 @@ function revealthree() { //This is to reveal and hide the Code on the final page
        document.getElementById("revealorhidethree").innerHTML = "Show code";}
     pressed = !pressed;
 }
-/*document.querySelector("img").setAttribute("src", "images/first-project.png");*/
+
+
+
 /*experimental stuff*/ 
 let imgone = document.getElementById("imgone");
 let revealorhide = document.getElementById("revealorhide");
 
 function Change() {
-
     if (imgone.getAttribute('src') === "images./first-project.png") {
         imgone.setAttribute('src', "images./Taskcodeone.png");
     }
     else {
         imgone.setAttribute('src', "images./first-project.png");
     }
-}
 
+    var x = document.getElementById("imgone");
+    if (x.className === "special-img") {
+      x.className = "code-img-one";
+    } else {
+      x.className = "special-img";
+    }
+
+    var x = document.getElementById("imgoneB");
+    if (x.className === "code-img-four") {
+      x.className = "code-img-two";
+    } else {
+      x.className = "code-img-four";
+    }
+}
 revealorhide.addEventListener("click", Change);
 
 let imgtwo = document.getElementById("imgtwo");
@@ -134,6 +148,20 @@ function Changetwo() {
     }
     else {
         imgtwo.setAttribute('src', "images./Uppgift2a.png");
+    }
+
+    var x = document.getElementById("imgtwo");
+    if (x.className === "code-img-two") {
+      x.className = "code-img-three";
+    } else {
+      x.className = "code-img-two";
+    }
+
+    var x = document.getElementById("imgtwoB");
+    if (x.className === "code-img-four") {
+      x.className = "code-img-two";
+    } else {
+      x.className = "code-img-four";
     }
 }
 
@@ -150,7 +178,21 @@ function Changethree() {
     else {
         imgthree.setAttribute('src', "images./Uppgift2b.png");
     }
+
+    var x = document.getElementById("imgthree");
+    if (x.className === "code-img-two") {
+      x.className = "code-img-three";
+    } else {
+      x.className = "code-img-two";
+    }
+
+    var x = document.getElementById("imgthreeB");
+    if (x.className === "code-img-four") {
+      x.className = "code-img-two";
+    } else {
+      x.className = "code-img-four";
+    }
 }
 
-revealorhidethree.addEventListener("click", Changethree);
+revealorhidethree.addEventListener("click", Changethree);    
 /*experimental stuff*/ 
