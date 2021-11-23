@@ -132,7 +132,6 @@ let imgtwo = document.getElementById("imgtwo");
 let revealorhidetwo = document.getElementById("revealorhidetwo");
 
 function Changetwo() {
-
     if (imgtwo.getAttribute('src') === "images./Uppgift2a.png") {
         imgtwo.setAttribute('src', "images./Taskcodetwo.png");
     }
@@ -161,7 +160,6 @@ let imgthree = document.getElementById("imgthree");
 let revealorhidethree = document.getElementById("revealorhidethree");
 
 function Changethree() {
-
     if (imgthree.getAttribute('src') === "images./Uppgift2b.png") {
         imgthree.setAttribute('src', "images./TaskcodetwoB.png");
     }

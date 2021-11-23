@@ -131,8 +131,8 @@ a:visited  {
     grid-template-columns: auto;
     grid-template-rows: 25% 25% 25% 25%;
     grid-template-areas: 
-     "header header header header" /*  */
-     "main main main main"
-     "footer footer footer footer"
+     "header header header header" /* The top portion of the dock */
+     "main main main main"  /* The main portion of the dock */
+     "footer footer footer footer" /* The bottom portion of the dock */
     ;
 }
