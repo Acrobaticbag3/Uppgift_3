@@ -141,7 +141,7 @@ function Changetwo() {
 
     var x = document.getElementById("imgtwo");
     if (x.className === "code-img-two") {
-      x.className = "code-img-three";
+      x.className = "code-img-two";
     } else {
       x.className = "code-img-two";
     }
@@ -169,7 +169,7 @@ function Changethree() {
 
     var x = document.getElementById("imgthree");
     if (x.className === "code-img-two") {
-      x.className = "code-img-three";
+      x.className = "code-img-two";
     } else {
       x.className = "code-img-two";
     }
