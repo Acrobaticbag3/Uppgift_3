@@ -183,4 +183,3 @@ function Changethree() {
 }
 
 revealorhidethree.addEventListener("click", Changethree);    
- 
